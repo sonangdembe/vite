@@ -1,17 +1,22 @@
 import React,{useState} from 'react'
 
 const App = () => {
-  const [DisplayName, setDisplayName] = useState('')
-  
+  const [displayColor, setDisplayColor] = useState('#ffffff')
+  const handleClicked =()=>{
+    const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    setDisplayColor(randomColor);
+  }
   return (
     <>
-    <h3>Build a React form with an input field where users can type their name. Display the typed name below the input field in real time.</h3>
-    <label htmlFor="">Enter your name : </label>
-    <input type="text"
-    placeholder = 'enter your name'
-    onChange = {(e) => setDisplayName(e.target.value)}
-    />
-    <p>name your entererd : {DisplayName}</p>
+    
+    <h3>Create a React component where clicking a button changes the background color randomly using useState.</h3>
+        <button onClick = {handleClicked}>Click me</button>
+        <div style={{backgroundColor : displayColor,
+      height : '50vh',
+      width : '50vh',
+      transition: "background-color 0.5s ease",
+
+    }}></div>
     </>
   )
 }
