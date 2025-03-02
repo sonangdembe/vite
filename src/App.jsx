@@ -1,23 +1,24 @@
-import React,{useState} from 'react'
+import React from 'react'
+import CounterApp from './Beginnner/CounterApp'
+import { TodoApp } from './Beginnner/TodoApp'
+import { DigitalClock } from './Beginnner/DigitalClock'
+import { FormValidation } from './Beginnner/FormValidation'
+import { RandomQuoteGenerator } from './Beginnner/RandomQuoteGenerator'
+import { TextConverter } from './Beginnner/TextConverter'
+import { Calculator } from './Beginnner/Calculator'
 
 const App = () => {
-  const [displayColor, setDisplayColor] = useState('#ffffff')
-  const handleClicked =()=>{
-    const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-    setDisplayColor(randomColor);
-  }
   return (
-    <>
-    
-    <h3>Create a React component where clicking a button changes the background color randomly using useState.</h3>
-        <button onClick = {handleClicked}>Click me</button>
-        <div style={{backgroundColor : displayColor,
-      height : '50vh',
-      width : '50vh',
-      transition: "background-color 0.5s ease",
+   <>
+   {/* <CounterApp />
+    <TodoApp/> 
+   <DigitalClock/> 
+   <FormValidation/>
+   <RandomQuoteGenerator />
+   <TextConverter/>*/}
+   <Calculator/>
 
-    }}></div>
-    </>
+   </>
   )
 }
 
