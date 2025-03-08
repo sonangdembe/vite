@@ -18,9 +18,10 @@ setCount(count <= 0 ? count : count - 1)
     }
   return (
     <>
-    <h3>Counter</h3>
+ <h3 className="bg-green-400">Counter</h3>
+
     <p>{count}</p>
-    <button onClick={handleIncrement}>Increment</button>
+    <button onClick={handleIncrement} >Increment</button>
     <button onClick={handleDecrement}>Decrement</button>
     </>
   )

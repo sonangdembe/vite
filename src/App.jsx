@@ -10,6 +10,8 @@ import { GroceryList } from './Intermediate/GroceryList'
 import { NotesApp } from './Intermediate/NotesApp'
 import { Counter } from './Intermediate/Counter'
 import { Propss } from './Intermediate/Propss'
+import { ColorChanger } from './Intermediate/ColorChanger'
+import { PasswordGenerator } from './Intermediate/PasswordGenerator'
 
 const App = () => {
   return (
@@ -23,14 +25,15 @@ const App = () => {
    <Calculator/>
    <GroceryList/>
   <NotesApp/> 
- 
+     <Counter/>
    <Propss 
    name = 'sona'
    agr = '33'
-   />*/}
-    
-    <Counter/>   
-     
+   />
+   <ColorChanger/>
+   */}
+<PasswordGenerator/>
+
 
 
    </>
