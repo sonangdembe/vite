@@ -12,6 +12,7 @@ import { Counter } from './Intermediate/Counter'
 import { Propss } from './Intermediate/Propss'
 import { ColorChanger } from './Intermediate/ColorChanger'
 import { PasswordGenerator } from './Intermediate/PasswordGenerator'
+import { Effect } from './Hooks/Effect'
 
 const App = () => {
   return (
@@ -31,9 +32,9 @@ const App = () => {
    agr = '33'
    />
    <ColorChanger/>
-   */}
-<PasswordGenerator/>
-
+  
+<PasswordGenerator/> */}
+<Effect/>
 
 
    </>
